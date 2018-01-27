@@ -19,4 +19,6 @@ Route::get('/contato', function () {
 });
 Route::get('/contato','UsuarioController@goContato')->name('rotaContato');
 
+Route::get('/art','UsuarioController@goArt')->name('rotaArt');
+
 Route::post('/contato','UsuarioController@mail')->name('rotaMail');

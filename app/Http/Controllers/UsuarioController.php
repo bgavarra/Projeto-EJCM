@@ -85,4 +85,13 @@ class UsuarioController extends Controller
     public function goContato(){
       return view('contato');
     }
+    public function mail(){
+
+      return view('/');
+    }
+    public function goArt(){
+
+      return view('/art');
+    }
+
 }

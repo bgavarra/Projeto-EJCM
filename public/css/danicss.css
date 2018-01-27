@@ -28,8 +28,10 @@ h2{
   border-radius: 12px;
 }
 a img {
-  height: 1.5em;
-  width: 1.5em;;
+  height: 10em;
+  width: 10em;
+  font-size: 1em;
+
 }
 
 li{
@@ -85,6 +87,23 @@ button:hover{
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+a{
+  color:#000000;
+}
+img{
+  border-radius: 12px;
+}
+img:hover{
+  -webkit-transition-duration: 0.4s;
+  box-shadow: 0 20px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+a:hover{
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s;
+  color: cadetblue;
+
+}
+
 .row{
   font-size: 1em;
   text-align:center;
@@ -97,8 +116,20 @@ button:hover{
 }
 
 p{
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .col.l6.m4.s4{
   left: 110vw;
+  padding-top: 1em;
+
+}
+.iconsContact{
+  height: 1.2em;
+  width: 1.2em;
+}
+.pAbout{
+  font-size: 1.4em;
+}
+.galeria{
+  text-align: center;
 }
