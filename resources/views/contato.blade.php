@@ -7,7 +7,7 @@
 
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/danicss.css">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
@@ -23,7 +23,7 @@
       <div class="container">
         <div class="row contact">
           <div class="col l12 m8 s6">
-            <p>Aqui você pode escrever pra mim o que você achou de mim!<br>Diz quem é você e como eu entro em contato contigo que eu respondo!<br>Prometo!</p>
+            <p>Aqui você pode escrever pra mim o que você achou do meu trabalho!<br>Diz quem você é e como eu entro em contato contigo que eu respondo!<br>Prometo!</p>
             <form action="" enctype="multipart/form-data" method="POST">
               Nome:
               <input class="input" type="text" name="Nome" value="">
