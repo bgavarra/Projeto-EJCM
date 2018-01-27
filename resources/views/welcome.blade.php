@@ -47,10 +47,10 @@ Suspendisse tristique lectus dui, id imperdiet ipsum vestibulum quis. Vestibulum
       <div class="container">
         <div class="row contact">
           <div class="col l6 m4 s4">
-            <a class="example-image-link" href="/art" data-lightbox="example-1"><img class="example-image" src="img/sketching-startup.jpg" alt="image-1" /><br>Pen & Paper</a>
+            <a href="/art"><img class="example-image" src="img/sketching-startup.jpg" alt="image-1" /><br>Pen & Paper</a>
           </div>
           <div class="col l6 m4 s4">
-            <a class="example-image-link" href="/art" data-lightbox="example-1"><img class="example-image" src="img/photo_icon.jpg" alt="image-1" /><br>Photography</a>
+            <a href="/art"><img class="example-image" src="img/photo_icon.jpg" alt="image-1" /><br>Photography</a>
           </div>
         </div>
       </div>
