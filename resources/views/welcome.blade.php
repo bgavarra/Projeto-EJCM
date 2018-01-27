@@ -95,7 +95,7 @@ Suspendisse tristique lectus dui, id imperdiet ipsum vestibulum quis. Vestibulum
       elmnt.scrollIntoView({behavior:'smooth'});
     }
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox-plus-jquery.min.js"></script>
+  
 </body>
 
 
