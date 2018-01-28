@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Usuario;
+use App\Msg;
 use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
@@ -35,7 +35,19 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $msg=new Msg;
+      $msg->name = $request->input('Nome');
+      $msg->email = $request->input('Email');
+      $msg->mensagem = $request->input('Mensagem');
+      $msg->save();
+      $nome = $request->input('Nome');
+      $email = $request->input('Email');
+      $mensagem = $request->input('Mensagem');
+      Msg::create(['name' => $nome, 'email' =>$email, 'mensagem' => $mensagem]);
+      \Mail::send('/contato', [], function($message) use($nome,$email,$mensagem){
+      $message->to('bgavarra@gmail.com', $nome, $email, $mensagem)->subject('Mensagem no site Danielles!');
+      });
+      return view('welcome');
     }
 
     /**

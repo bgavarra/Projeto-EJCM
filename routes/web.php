@@ -20,11 +20,14 @@ Route::get('/contato', function () {
 Route::get('/art', function () {
     return view('/art');
 });
+Route::get('/home', function () {
+    return view('/home');
+});
+Route::post('/contato', 'UsuarioController@store')->name('RotaMailContato');
+
 Route::get('/contato','UsuarioController@goContato')->name('rotaContato');
 
 Route::get('/art','UsuarioController@goArt')->name('rotaArt');
-
-Route::post('/contato','UsuarioController@mail')->name('rotaMail');
 
 Auth::routes();
 

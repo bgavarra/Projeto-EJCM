@@ -24,7 +24,8 @@
         <div class="row contact">
           <div class="col l12 m8 s6">
             <p>Aqui você pode escrever pra mim o que você achou do meu trabalho!<br>Diz quem você é e como eu entro em contato contigo que eu respondo!<br>Prometo!</p>
-            <form action="" enctype="multipart/form-data" method="POST">
+            <form action="{{ route('RotaMailContato')}}" enctype="multipart/form-data" method="POST">
+              {{csrf_field()}}
               Nome:
               <input class="input" type="text" name="Nome" value="">
               <br>
@@ -32,7 +33,7 @@
               <input class="input" type="email" name="Email" value="">
               <br>
               O que você está pensando?<br>
-              <textarea class="input" rows="4" cols="50"></textarea><br><br>
+              <textarea class="input" rows="4" cols="50" name="Mensagem"></textarea><br><br>
               <input class="submit" type="submit" value="Enviar!">
             </form>
           </div>
