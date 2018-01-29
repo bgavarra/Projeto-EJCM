@@ -23,6 +23,8 @@ Route::get('/art', function () {
 Route::get('/home', function () {
     return view('/home');
 });
+Route::get('/changeAbout', 'UsuarioControler@changeAbout')->name('RotaChangeAbout');
+
 Route::post('/contato', 'UsuarioController@store')->name('RotaMailContato');
 
 Route::get('/contato','UsuarioController@goContato')->name('rotaContato');

@@ -44,7 +44,7 @@ class UsuarioController extends Controller
       $email = $request->input('Email');
       $mensagem = $request->input('Mensagem');
       Msg::create(['name' => $nome, 'email' =>$email, 'mensagem' => $mensagem]);
-      \Mail::send('/contato', [], function($message) use($nome,$email,$mensagem){
+      \Mail::send('/mailContent', ['nome'=>$nome,'email'=>$email,'mensagem'=>$mensagem], function($message) use($nome,$email,$mensagem){
       $message->to('bgavarra@gmail.com', $nome, $email, $mensagem)->subject('Mensagem no site Danielles!');
       });
       return view('welcome');
@@ -105,5 +105,9 @@ class UsuarioController extends Controller
 
       return view('/art');
     }
+    public function changeAbout(){
+      return view('/changeAbout');
+    }
+
 
 }

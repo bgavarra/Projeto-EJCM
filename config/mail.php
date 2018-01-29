@@ -25,9 +25,9 @@ return [
             ],
         ],
 
-    'username' => env('bgavarra@gmail.com'),
+    'username' => env('MAIL_USERNAME'),
 
-    'password' => env('57185165490@Phq'),
+    'password' => env('MAIL_PASSWORD'),
 
     'sendmail' => '/usr/sbin/sendmail -bs',
 
