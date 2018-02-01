@@ -16,6 +16,9 @@ class CreateMsgsTable extends Migration
         Schema::create('msgs', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('name');
+            $table->string('mensagem');
+            $table->string('email');
         });
     }
 

@@ -10,7 +10,7 @@
                   <h4>O que você fazer hoje?</h4>
                   <div class="col-md-8">
                     <ul style="list-style:none;">
-                      <li style="margin:1vh;"><a style="color:black;" href=""><button>Alterar o texto de introdução</button></a></li>
+                      <li style="margin:1vh;"><a style="color:black;" href="{{route('RotaChangeAbout')}}"><button>Alterar o texto de introdução</button></a></li>
                       <li style="margin:1vh;"><a style="color:black;" href=""><button>Adicionar artes à galeria</button></a></li>
                       <li style="margin:1vh;"><a style="color:black;" href=""><button>Remover artes da galeria</button></a></li>
                       <li style="margin:1vh;"><a style="color:black;" href=""><button>Ver as mensagens deixadas por seus visitantes</button></a></li>

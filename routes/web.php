@@ -23,14 +23,15 @@ Route::get('/art', function () {
 Route::get('/home', function () {
     return view('/home');
 });
-Route::get('/changeAbout', 'UsuarioControler@changeAbout')->name('RotaChangeAbout');
 
-Route::post('/contato', 'UsuarioController@store')->name('RotaMailContato');
+Route::post('/contato', 'MsgsController@store')->name('RotaMailContato');
 
-Route::get('/contato','UsuarioController@goContato')->name('rotaContato');
+Route::get('/contato','MsgsController@goContato')->name('rotaContato');
 
 Route::get('/art','UsuarioController@goArt')->name('rotaArt');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/changeAbout', 'UsuarioControler@changeAbout')->name('RotaChangeAbout');
